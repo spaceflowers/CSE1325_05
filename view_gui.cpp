@@ -1,11 +1,8 @@
-#include "view.h"
-#include "dialogs.h"
-#include <string>
-#include <iostream>
+#include "view_gui.h"
 
 using namespace std;
 
-void View::show_menu() {
+void View_gui::show_menu() {
   string menu = R"(
 =================================
 CSE1325 Library Management System
@@ -33,16 +30,16 @@ Utility
   Dialogs::input(menu, "Main Menu");
 }
 
-void View::list_publications() {
+void View_gui::list_publications() {
 
 }
 
 
-void View::list_patrons() {
+void View_gui::list_patrons() {
   
 }
 
-void View::help() {
+void View_gui::help() {
   
 }
 

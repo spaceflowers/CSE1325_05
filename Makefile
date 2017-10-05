@@ -52,7 +52,7 @@ patron.o: patron.cpp patron.h
 dialogs.o: dialogs.cpp *.h
 	g++ --std=c++11 -c dialogs.cpp `/usr/bin/pkg-config gtkmm-3.0 --cflags --libs`
 
-view_gui.o: view_gui.cpp dialogs.o 
+view_gui.o: view_gui.cpp view_gui.h dialogs.h 
 	$(CXX) $(CXXFLAGS) -c -w view_gui.cpp `/usr/bin/pkg-config gtkmm-3.0 --cflags --libs`
 
 test_view_gui: test_view_gui.o controller.o view_gui.o library.o publication.o patron.o
