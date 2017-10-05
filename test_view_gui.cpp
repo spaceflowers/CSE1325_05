@@ -1,4 +1,4 @@
-#include "view.h"
+#include "view_gui.h"
 #include "patron.h"
 #include "publication.h"
 #include "library.h"
@@ -10,9 +10,9 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
   Library library;
-  View view(library);
+  View_gui view(library);
 
   bool passed = true;
 
-  view.show_menu();
+  view_gui.show_menu();
 }
